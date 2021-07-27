@@ -81,7 +81,7 @@ async def unban(ctx, *, member):
             await ctx.send(f'{member.mention} was unbanned.')
             return
 @client.command()
-async def announce(ctx, arg):
+async def announce(ctx, *, arg):
     channel = client.get_channel(867291997182230528)
     await channel.send(arg)
 #commands will be above
